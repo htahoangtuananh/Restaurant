@@ -105,7 +105,7 @@
             </div>
             <div class="row intro-menu-icon">
                 <ul class="nav nav-pills">
-                    <li class="active col-md-offset-2 menu-li"><a data-toggle="pill" href="#breakfast" data-pill="breakfast"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/breakfast.png'?>"></a></li>
+                    <li class="active col-md-offset-2 menu-li"><a data-toggle="pill" href="#breakfast" data-pill="breakfast"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/breakfast-active.png'?>"></a></li>
                     <li class="menu-li"><a data-toggle="pill" href="#dinner" data-pill="dinner"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/dinner.png'?>"></a></li>
                     <li class="menu-li"><a data-toggle="pill" href="#dessert" data-pill="dessert"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/dessert.png'?>"></a></li>
                     <li class="menu-li"><a data-toggle="pill" href="#drink" data-pill="drink"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/drink.png'?>"></a></li>
@@ -312,5 +312,27 @@
                     $(this).find('img').attr('src','<?= base_url()."assets/img/icon/drink-active.png"?>');
                     break;
             }
-    })
+            var li = $('.menu-li');
+            var inactive = [];
+            for(var i = 0; i < li.length; i++){
+                if(li[i].classList.contains('active')){
+                    inactive.push(li[i]);
+                    var node = li[i].childNodes[0].getAttribute('data-pill');
+                    switch(node){
+                        case 'breakfast':
+                            li[i].childNodes[0].firstElementChild.setAttribute('src','<?= base_url()."assets/img/icon/breakfast.png"?>');
+                            break;
+                        case 'dinner':
+                            li[i].childNodes[0].firstElementChild.setAttribute('src','<?= base_url()."assets/img/icon/dinner.png"?>');
+                            break;
+                        case 'dessert':
+                            li[i].childNodes[0].firstElementChild.setAttribute('src','<?= base_url()."assets/img/icon/dessert.png"?>');
+                            break;
+                        case 'drink':
+                            li[i].childNodes[0].firstElementChild.setAttribute('src','<?= base_url()."assets/img/icon/drink.png"?>');
+                            break;
+                    }
+                }
+            }
+    });
 </script>
