@@ -52,7 +52,7 @@ td{
 }
 
 #header-background{
-	width: 100%;
+	max-width: 105%;
 	position: absolute;
 }
 
@@ -89,28 +89,29 @@ td{
 }
 
 .phrase h1{
-	font-size: 55px;
+	font-size: 3vw;
 	font-family: "UVNSaigon_R", Fallback, sans-serif;
 }
 
 .phrase h3{
-	font-size: 13px;
+	font-size: 1vw;
 	font-family: "Roboto-Light", Fallback, sans-serif;
 }
 
 .phrase a{
-	font-family: "Roboto-Regular", Fallback, sans-serif;
-    width: 10%;
+    width: 15%;
     display: inline-block;
-    font-size: 10px;
-	padding: 10px;
+    font-size: 0.9vw;
+	padding: 10px!important;
 	border-radius: 0;
 	color:white
 }
 
 #book-button{
 	background-color: #cb703b;
-	border: none;
+	border: 1px solid #cb703b !important;
+	font-family: "Roboto-Regular", Fallback, sans-serif;
+	text-align: center;
 }
 
 #book-button:hover,#menu-button:hover{
@@ -122,6 +123,9 @@ td{
 
 #menu-button{
 	background: none;
+	border: 1px solid white !important;
+	font-family: "Roboto-Regular", Fallback, sans-serif;
+	text-align: center;
 }
 
 .btn-block + .btn-block{
@@ -140,4 +144,86 @@ td{
 
 .top-menu a:hover{
 	text-shadow: 1px 1px 12px white;
+}
+
+#body{
+	margin-top: 15%;
+	font-family: "UVNSaigon_R", Fallback, sans-serif;
+}
+
+#menu, #menu h1, #menu h4{
+	font-family: "UVNSaigon_R", Fallback, sans-serif;
+}
+
+#welcome{
+	width: 100%;
+	margin-top: 10%;
+}
+
+.welcome-img, .menu-img{
+	width: 80%;
+}
+
+.welcome-text, .menu-text{
+	text-align: center;
+}
+
+.menu-text .row , .menu{
+	margin-bottom: 15px;
+}
+
+.welcome-text h1,.welcome-text p{
+	font-family: "UVNSaigon_R", Fallback, sans-serif;
+}
+
+.row{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media screen and (max-width: 990px) {
+	.welcome-text{
+		margin-top: 25%;
+		padding: 10px;
+	}
+}
+
+.hr-menu hr{
+	border-top: 2px solid #dcdcdc;
+	margin-top: 52px;
+}
+
+.menu-img-icon{
+	width: 60%;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+#menu .intro-menu{
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.intro-menu-icon{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.price{
+	text-align: right;
+	color: #cb703b;
+}
+
+.hr-dotted{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+li.active a{
+	outline: none !important;
+	border-top: none;
+	border-bottom: 2px solid #cb703b;
+	background: none!important;
 }
