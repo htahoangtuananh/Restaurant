@@ -42,6 +42,10 @@ td{
 	padding: 10px!important;
 }
 
+.text-align-center{
+	text-align: center;
+}
+
 .thumb-image{
 	max-width: 200px;
 	margin-top: 10px;
@@ -72,6 +76,10 @@ td{
 	max-width: 55%;
 	position: absolute;
 	margin-left: 44px;
+}
+
+.logo{
+	width:100%
 }
 
 .highlight{
@@ -151,6 +159,10 @@ td{
 	font-family: "UVNSaigon_R", Fallback, sans-serif;
 }
 
+#menu{
+	margin-bottom: 7%;
+}
+
 #menu, #menu h1, #menu h4{
 	font-family: "UVNSaigon_R", Fallback, sans-serif;
 }
@@ -164,15 +176,19 @@ td{
 	width: 80%;
 }
 
-.welcome-text, .menu-text{
+.logo{
+	width: 60%;
+}
+
+.welcome-text, .menu-text, .footer-title{
 	text-align: center;
 }
 
-.menu-text .row , .menu{
+.menu-text .row , .menu, .welcome-h1{
 	margin-bottom: 15px;
 }
 
-.welcome-text h1,.welcome-text p{
+.welcome-text h1,.welcome-text p, #footer, .footer-title h4{
 	font-family: "UVNSaigon_R", Fallback, sans-serif;
 }
 
@@ -186,6 +202,22 @@ td{
 		margin-top: 25%;
 		padding: 10px;
 	}
+
+	#header{
+		margin-top: 12%;
+	}
+
+	.nav-pills li{
+		margin-left: 0!important;
+	}
+}
+
+.header-nav{
+	padding-top: 10px;
+}
+
+#header-nav-mobile{
+	background: #7d4524;
 }
 
 .hr-menu hr{
@@ -193,8 +225,8 @@ td{
 	margin-top: 52px;
 }
 
-.menu-img-icon{
-	width: 60%;
+.menu-img-icon, .footer-img{
+	width: 100%;
 }
 
 .no-padding{
@@ -226,4 +258,13 @@ li.active a{
 	border-top: none;
 	border-bottom: 2px solid #cb703b;
 	background: none!important;
+}
+
+.footer-content{
+	margin-top: 50px;
+}
+
+.footer-a{
+	color: #dcdcdc;
+	text-align: center;
 }

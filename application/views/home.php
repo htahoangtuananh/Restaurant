@@ -4,7 +4,7 @@
         <div class="desktop hidden-xs hidden-sm">
             <nav class="navbar transparent navbar-inverse navbar-static-top top-menu ">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <div class="col-md-offset-2 col-md-3 col-sm-4">
+                    <div class="col-md-offset-2 col-md-3 col-sm-4 header-nav">
                             <ul class="nav navbar-nav float-right">
                                 <li class="custom-active"><a href="#">Home</a>
                                     <img class="highlight" src="<?= base_url().'assets/img/highlight.png'?>"
@@ -12,10 +12,10 @@
                                 <li><a href="#">About us</a></li>
                             </ul>
                     </div>
-                    <div class="col-md-2 col-sm-4">
-                        <img id="logo" src="<?= base_url().'assets/img/logo.png'?>" style="">
+                    <div class="col-md-2 col-sm-4 text-align-center">
+                        <img class="logo" src="<?= base_url().'assets/img/logo-trans.png'?>" style="">
                     </div>
-                    <div class="col-md-3 col-sm-4">
+                    <div class="col-md-3 col-sm-4 header-nav">
                         <ul class="nav navbar-nav">
                             <li><a href="#">Menu</a></li>
                             <li><a href="#">Contact</a></li>
@@ -37,7 +37,7 @@
     </div>
 </section>
 <div class="row">
-    <div class="navbar navbar-inverse navbar-fixed-top hidden-md hidden-lg">
+    <div id="header-nav-mobile" class="navbar navbar-inverse navbar-fixed-top hidden-md hidden-lg">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#">LEMONGRASS</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -61,11 +61,11 @@
 </div>
 <section id="body">
     <div class="row">
-        <div class="col-md-3 hidden-sm hidden-xs">
+        <div class="col-md-4 hidden-sm hidden-xs">
             <img class="welcome-img" src="<?= base_url().'assets/img/welcome-left.png'?>">
         </div>
-        <div class="col-md-6 col-xs-12 welcome-text">
-            <div class="row">
+        <div class="col-md-4 col-xs-12 welcome-text">
+            <div class="row welcome-h1">
                 <h1>WELCOME</h1>
             </div>
             <div class="row">
@@ -75,7 +75,7 @@
                     eleifend ligula lacinia ac. Fusce malesuada finibus nisl. </p>
             </div>
         </div>
-        <div class="col-md-3 hidden-sm hidden-xs">
+        <div class="col-md-4 hidden-sm hidden-xs">
             <img class="welcome-img float-right" src="<?= base_url().'assets/img/welcome-right.png'?>">
         </div>
     </div>
@@ -105,10 +105,10 @@
             </div>
             <div class="row intro-menu-icon">
                 <ul class="nav nav-pills">
-                    <li class="active col-md-offset-2 menu-li"><a data-toggle="pill" href="#breakfast" data-pill="breakfast"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/breakfast-active.png'?>"></a></li>
-                    <li class="menu-li"><a data-toggle="pill" href="#dinner" data-pill="dinner"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/dinner.png'?>"></a></li>
-                    <li class="menu-li"><a data-toggle="pill" href="#dessert" data-pill="dessert"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/dessert.png'?>"></a></li>
-                    <li class="menu-li"><a data-toggle="pill" href="#drink" data-pill="drink"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/drink.png'?>"></a></li>
+                    <li class="active menu-li col-md-2 col-md-offset-2 col-xs-3"><a data-toggle="pill" href="#breakfast" data-pill="breakfast"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/breakfast-active.png'?>"></a></li>
+                    <li class="menu-li col-md-2 col-xs-3"><a data-toggle="pill" href="#dinner" data-pill="dinner"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/dinner.png'?>"></a></li>
+                    <li class="menu-li col-md-2 col-xs-3"><a data-toggle="pill" href="#dessert" data-pill="dessert"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/dessert.png'?>"></a></li>
+                    <li class="menu-li col-md-2 col-xs-3"><a data-toggle="pill" href="#drink" data-pill="drink"><img class="menu-img-icon" src="<?= base_url().'assets/img/icon/drink.png'?>"></a></li>
                 </ul>
             </div>
             <div class="tab-content" >
@@ -291,6 +291,44 @@
                     <h4>MATERIAL</h4>
                 </div>
             </div>
+			<div class="row gallery">
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-1.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-2.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-1.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-2.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-1.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-2.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-1.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-2.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-1.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-2.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-1.png'?>">
+				</div>
+				<div class="col-md-2 col-xs-4 no-padding">
+					<img class="menu-img-icon" src="<?= base_url().'assets/img/gallery-2.png'?>">
+				</div>
+			</div>
         </div>
     </div>
 </section>
